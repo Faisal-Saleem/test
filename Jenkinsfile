@@ -1,18 +1,22 @@
 pipeline {
   agent any
   stages {
-    stage("build") {
+    stage('Clean workspace') {
       steps {
-        echo 'Builing the application...'
+        echo 'Cleaning workspace'
+        cleanWs()
       }
     }
-    stage("test") {
-      steps {
-        echo 'Testing the application...'
+    stage('Git Checkout') {
+      steps{
+        echo 'git branch 'deploy''
       }
     }
-    stage("deploy") {
-        echo 'Deploying the application...'
+    stage('Restore Packages') {
+      steps {
+        bat 'dotnet restore ${workspace}'
+        echo ${workspace}
+      }
     }
   }
 }
