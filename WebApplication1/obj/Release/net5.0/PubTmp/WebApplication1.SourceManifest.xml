@@ -1,4 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <sitemanifest>
-  <IisApp path="C:\Users\faisal.s\source\repos\WebApplication1\WebApplication1\bin\Debug\net5.0\publish\" />
+  <IisApp path="WebApplication1\WebApplication1\bin\Debug\net5.0\publish\" />
 </sitemanifest>
