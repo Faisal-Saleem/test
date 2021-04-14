@@ -10,7 +10,7 @@ pipeline {
     stage("Build App") {
       steps {
         echo 'Builing App...'
-        echo 'Workspace address ${workspace}'
+        bat 'msbuild.exe ${workspace}\\C:\Users\\\faisal.s\\\source\\\repos\\\WebApplication1\\\WebApplication1.sln'
       }
     }
   }
