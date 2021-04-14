@@ -17,6 +17,7 @@ pipeline {
       steps {
         echo 'Builing App...'
         bat 'dotnet build WebApplication1.sln'
+	bat 'dotnet publish -p:PublishProfile=IISProfile'
       }
     }
   }
