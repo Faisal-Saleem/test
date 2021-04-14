@@ -16,7 +16,7 @@ pipeline {
     stage("Build App") {
       steps {
         echo 'Builing App...'
-        bat 'dotnet build ${workspace}\\WebApplication1\\WebApplication1.sln'
+        bat 'dotnet build \\WebApplication1\\WebApplication1.sln'
       }
     }
   }
