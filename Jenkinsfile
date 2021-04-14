@@ -10,8 +10,7 @@ pipeline {
     stage("Checkout") {
       steps {
         echo 'Checkout Updated Code'
-        bat 'cd C:\\Users\\faisal.s\\source\\repos\\WebApplication1'
-        bat 'git pull' 
+        git branch: 'master', url:'https://github.com/Faisal-Saleem/test'
       }
     }
     stage("Build App") {
