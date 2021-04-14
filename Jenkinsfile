@@ -7,16 +7,5 @@ pipeline {
         cleanWs()
       }
     }
-    stage("Git Checkout") {
-      steps{
-        git branch 'deploy'
-      }
-    }
-    stage("Restore Packages") {
-      steps {
-        bat 'dotnet restore "${workspace}"'
-        echo ${workspace}
-      }
-    }
   }
 }
