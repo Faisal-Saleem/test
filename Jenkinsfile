@@ -9,12 +9,12 @@ pipeline {
     }
     stage("Git Checkout") {
       steps{
-        echo 'git branch 'deploy''
+        git branch 'deploy'
       }
     }
     stage("Restore Packages") {
       steps {
-        bat 'dotnet restore ${workspace}'
+        bat 'dotnet restore "${workspace}"'
         echo ${workspace}
       }
     }
