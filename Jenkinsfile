@@ -10,7 +10,7 @@ pipeline {
     stage("Build App") {
       steps {
         echo 'Builing App...'
-        bat 'msbuild.exe ${workspace}\WebApplication1\WebApplication1.sln'
+        bat 'msbuild.exe ${workspace}\\WebApplication1\\WebApplication1.sln'
       }
     }
   }
